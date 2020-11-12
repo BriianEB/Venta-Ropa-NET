@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+    margin: 0 10%;
+}
+
+header {
+    padding: 1rem 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+
+    .logo {
+        width: 220px;
+        height: 55px;
+    }
+
+    .nav-menu {
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav-logo {
+        align-items: flex-end;
+        flex-grow: 1;
+    }
+}
+
+main {
+    padding-bottom: 10rem;
+
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    padding: 1rem 0;
+    bottom: 0;
+    height: 10rem;
+    display: flex;
+    align-items: flex-end;
+
+    .footer-wrapper {
+        flex-grow: 1;
+    }
+
+    .footer-content {
+        display: flex;
+        padding: 1rem 0;
+
+        .footer-info {
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .footer-options {
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-end;
+
+            a {
+                text-decoration: none;
+                color: #008CBA;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+
+.profesores-section {
+    margin-top: 7rem;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #E7E7E7;
+    width: 70%;
+
+    th, td {
+        width: 10rem;
+        padding: 0.75rem;
+        text-align: center;
+        vertical-align: top;
+    }
+}
+
+.tabla {
+    thead th {
+        background-color: #E7E7E7;
+    }
+
+    tbody {
+        tr:nth-of-type(even) {
+          background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        a {
+            padding: 0.5rem;
+            background-color: #E7E7E7;
+            color: #000;
+            font-size: 0.8rem;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            transition: background-color 0.15s ease-in-out;
+
+            &:hover {
+                background-color: #B9B9B9;
+            }
+        }
+    }
+
+    tfoot {
+        td {
+            text-align: left;
+
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.tabla-detalles {
+    width: 70%;
+
+    thead {
+        background-color: #333;
+        color: #EEE;
+        border: 1px solid #333;
+    }
+
+    tbody {
+        tr, td {
+            border: 1px solid #E7E7E7;
+            color: #777;
+        }
+    }
+}
+
+
+
+.boton {
+    background-color: #008CBA;
+    color: #FFF;
+    padding: 1rem 2rem;
+    margin: 0 0.1rem;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+        background-color: #005B79;
+    }
+
+    /*
+     *    Before removing that ugly blue outline, you may want to take accessibility
+     *    into consideration. By default, that blue outline is placed on focusable elements.
+     *    This is so that users with accessibility issues are able to focus that button by tabbing to it.
+     */
+    &:focus {
+        outline: none;
+    }
+}
+
+.form-container {
+    width: 60%;
+}
+
+.form-group {
+    margin: 1rem 0;
+
+    label {
+        display: inline-block;
+        margin-bottom: 0.25rem;
+    }
+}
+
+.form-control {
+    display: block;
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid #CED4DA;
+    border-radius: 0.25rem;
+}
+
+.button-container {
+    text-align: right;
+}
+
+.color-container {
+    background-color: blue;
+    margin: 2rem 0;
+    width: 25rem;
+    height: 10rem;
+    border-radius: 0.5rem;
+}
+
+.main-menu {
+    list-style: none;
+    text-align: center;
+
+    a {
+        display: inline-block;
+        margin: 1rem;
+    }
+}

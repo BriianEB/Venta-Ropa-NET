@@ -1,0 +1,88 @@
+﻿* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+    margin: 0 10%;
+}
+
+.form-container {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 75px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 1.68rem;
+}
+
+.form-group {
+    margin: 1rem 0;
+    text-align: left;
+}
+
+    .form-group label {
+        display: inline-block;
+        margin-bottom: 0.25rem;
+    }
+
+.form-control {
+    display: block;
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid #CED4DA;
+    border-radius: 0.25rem;
+}
+
+.boton {
+    background-color: #008CBA;
+    color: #FFF;
+    padding: 1rem 2rem;
+    margin: 0 0.1rem;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+    /*
+               *    Before removing that ugly blue outline, you may want to take accessibility
+               *    into consideration. By default, that blue outline is placed on focusable elements.
+               *    This is so that users with accessibility issues are able to focus that button by tabbing to it.
+               */
+}
+
+    .boton:hover {
+        background-color: #005B79;
+    }
+
+    .boton:focus {
+        outline: none;
+    }
+
+footer {
+    position: absolute;
+    width: 100%;
+    padding: 1rem 0;
+    bottom: 0;
+    height: 10rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+    footer .footer-wrapper {
+        flex-grow: 1;
+    }
+
+    footer .footer-content {
+        display: flex;
+        padding: 1rem 0;
+    }
+
+        footer .footer-content .footer-info {
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-start;
+        }

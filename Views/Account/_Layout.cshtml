@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/normalize.css" rel="stylesheet" />
+    <link href="~/css/login.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="page-container">
+        <main>
+            @RenderBody()
+        </main>
+
+        <footer>
+            <div class="footer-wrapper">
+                <hr>
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <span>© Copyright @DateTime.Now.Year</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
